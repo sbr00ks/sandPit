@@ -10,10 +10,10 @@ import matplotlib
 matplotlib.style.use('ggplot')
 
 import quandl, pandas as pd
-quandl.ApiConfig.api_key = '9LU39iDpfejNtv8xQDzs'
+quandl.ApiConfig.api_key = ''
 mydata = quandl.get("EIA/PET_RWTC_D",returns="pandas")
 
 # In[]
 
-mydata=quandl.get("CVR/ANGEL_SECTORS", authtoken="9LU39iDpfejNtv8xQDzs",returns="pandas")
+mydata=quandl.get("CVR/ANGEL_SECTORS", authtoken="",returns="pandas")
 mydata.plot()
